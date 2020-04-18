@@ -5,11 +5,18 @@ gcc -fPIC -c groupcidr.c groupcidr_wrap.c -I/usr/include/python3.7m
 ld -shared groupcidr.o groupcidr_wrap.o -o _groupcidr.so
 
 python3
+
 Python 3.7.5 (default, Nov 20 2019, 09:21:52) 
+
 [GCC 9.2.1 20191008] on linux
+
 Type "help", "copyright", "credits" or "license" for more information.
+
 >>> import groupcidr
+
+
 >>> groupcidr.read_input("example.txt")
+
 14.224.234.238/32
 47.55.81.118/32
 49.241.218.177/32
@@ -25,4 +32,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 151.164.56.87/32
 185.61.131.190/32
 201.48.44.210/32
+
 >>>
