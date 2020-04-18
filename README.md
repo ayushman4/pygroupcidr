@@ -1,14 +1,14 @@
+Steps to Install
+===================
 swig -python groupcidr.i
+python3 setup.py install
 
-gcc -fPIC -c groupcidr.c groupcidr_wrap.c -I/usr/include/python3.7m
+Steps to use
+==================
 
-ld -shared groupcidr.o groupcidr_wrap.o -o _groupcidr.so
+import groupcidr
 
-  python3
-
-  import groupcidr
-
-  groupcidr.read_input("example.txt")
+groupcidr.read_input("example.txt")
 
   14.224.234.238/32
   47.55.81.118/32
