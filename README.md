@@ -1,14 +1,14 @@
 Steps to Install
 ===================
-swig -python groupcidr.i
-python3 setup.py install
+  swig -python groupcidr.i
+  python3 setup.py install
 
 Steps to use
 ==================
 
-import groupcidr
+  import groupcidr
 
-groupcidr.read_input("example.txt")
+  groupcidr.read_input("example.txt")
 
   14.224.234.238/32
   47.55.81.118/32
